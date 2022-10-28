@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import styles from './App.module.css'
 
 const FeedbackOption = ({ options, onLeaveFeedback }) => {
     return (
-        <ul className="btn-list">{options.map(text => <li key={text}><button style={{ textTransform: 'capitalize' }} type="button" onClick={() => onLeaveFeedback(text)}>{text}</button></li>)}</ul>
+        <ul className={styles.btnList}>{options.map(text => <li key={text}><button className={styles.btn} type="button" onClick={() => onLeaveFeedback(text)}>{text}</button></li>)}</ul>
     );
 };
 

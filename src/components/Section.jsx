@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import styles from './App.module.css'
 
 const Section = ({ title, children }) => (
-  <section>
+  <section className={styles.section}>
         <h2>{title}</h2>
         {children}
   </section>
